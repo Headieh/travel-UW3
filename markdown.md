@@ -1,4 +1,4 @@
-# HTML300: travel
+# Travel
 
  # About:
 
@@ -9,5 +9,7 @@
  API Documentation:
  Currency Exchange Rates:
  https://fixer.io/documentation
+
  Climate Data:
- https://dev.meteostat.net
+ https://dev.meteostat.net/api/point/climate
+ Station list - https://open.meteostat.net/stations.csv (must use these lat/long!)

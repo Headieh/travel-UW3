@@ -1,0 +1,23 @@
+$pink: #FF1493;
+$gray: #f6f5f6;
+
+$white: #ffffff;
+$red: #F1352B;
+
+$black: #000000;
+$lighten-black:    lighten( $black, 30% );
+
+$blue: #150f96;
+$darken-blue:     darken( $blue, 5% );
+$lighten-blue:    lighten( $blue, 40% );
+
+$card-height: 15rem;
+
+$a-heart: 2s pulsate infinite alternate ease-in-out;
+@keyframes pulsate {
+  0% { transform: scale(1.2);}
+  50% { transform: scale(1.6);}
+  100% { transform: scale(1.2);}
+}
+
+$a-under: all 1s ease-in-out;
