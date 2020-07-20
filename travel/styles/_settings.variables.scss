@@ -20,4 +20,13 @@ $a-heart: 2s pulsate infinite alternate ease-in-out;
   100% { transform: scale(1.2);}
 }
 
-$a-under: all 1s ease-in-out;
+$a-under: all 30s ease-in-out;
+
+@keyframes clouds1 {
+ 0%   {
+ transform: translateX(100%);
+ }
+ 100% {
+ transform: translateX(-100%);
+ }
+}
