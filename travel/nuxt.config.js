@@ -5,12 +5,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'Travel with Nichole',
-    //title: process.env.npm_package_name || '',
+    title: 'Travel',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: "This site is Headieh Nichole Godwin's personal project demonstrating Vue.js skills" },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

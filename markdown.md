@@ -13,3 +13,17 @@
  Climate Data:
  https://dev.meteostat.net/api/point/climate
  Station list - https://open.meteostat.net/stations.csv (must use these lat/long!)
+
+
+ ### To migrate:
+ -	open your terminal and `cd` into the path where you want this code to exist
+ -	Fork and clone this repo (If you need help with this here is a helpful link:
+   https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+ -	`cd` into your newly created directory
+ -	Verify `yarn` is installed by running `yarn -v` in your terminal to see if a version comes back
+ 	- 	Run `yarn` to add all necessary packages listed in the package.json file
+ 	-	Run `yarn run dev` to start the local server
+
+
+ ### view:
+ - 	Netlify was used to deploy this repo. Visit https://nichole-travel.netlify.app to view the code from this repo.
