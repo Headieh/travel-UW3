@@ -25,9 +25,9 @@ This project demonstrates:
 -   Verify `yarn` is installed by running `yarn -v` in your terminal to see if a version comes back
 -   If `yarn` is not already installed: [install yarn](https://classic.yarnpkg.com/en/docs/install)
 -   Use `cd` to navigate to the folder you want this code to belong in within terminal
--	  [Fork and clone this repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
-- 	Run `yarn` to add all necessary packages listed in the package.json file
--	  Run `yarn run dev` to start the local server
+-   [Fork and clone this repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+-   Run `yarn` to add all necessary packages listed in the package.json file
+-   Run `yarn run dev` to start the local server
 
 ### View:
  - Visit [site](https://nichole-travel.netlify.app)
