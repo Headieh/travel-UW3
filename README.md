@@ -1,6 +1,6 @@
 # Travel
 
-This site was the milestone project for the 3rd(final) class of the front-end
+This site was the milestone project for the 3rd class(JavaScript & Advanced CSS) of the Front-End
 certificate program from the University of Washington. This site includes travel
 destinations, climate data, currency exchange rates, and itinerary ideas. This
 site should inspire others to travel and explore new places.
