@@ -105,7 +105,7 @@ let itl = {
   },
   6: {
     type: "Feature",
-    id: "Scicly",
+    id: "Sicily",
     properties: {
       ideas: [
         {
