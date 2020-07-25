@@ -74,8 +74,9 @@ export default {
   flex-direction: column;}
 .home{
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
   margin:0;
   padding:0;
   z-index: -1;
