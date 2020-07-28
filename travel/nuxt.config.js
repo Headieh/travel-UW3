@@ -15,6 +15,7 @@ export default {
       { hid: 'fbtitle', property:'og:title', content:'Travel' },
       { hid: 'fdescription', property:'og:description', content:'look at vacation ideas!' },
       { hid: 'fbimg', property:'og:image', content:'https://nichole-travel.netlify.app/_nuxt/img/costarica.38deea4.png' },
+      { hid: 'fbimgalt', property:'og:image:alt', content:'Costa Rica Beach - Manuel Antonio National Park' },
 
 
       {hid: 'tcard', property:'twitter:card', content:"This site is Headieh Nichole Godwin's personal project demonstrating Vue.js skills" },
