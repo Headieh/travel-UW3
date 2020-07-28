@@ -23,7 +23,7 @@
         <b-navbar-nav class="mr-auto">
           <ul>
             <li class="list-unstyled">
-              Return to <a href="https://www.HNGodwin.com"> Portfolio </a></li>
+              Return to <a href="https://HNGodwin.com"> Portfolio </a></li>
           </ul>
 
           <ul>
