@@ -65,58 +65,6 @@
     </b-col>
   </b-row>
 
-  <footer>
-
-    <a href="#" ref="btnShow" @click="showModal('photocred')" class="credit">Photo Credits</a>
-    <b-modal id="photocred" title='Photo Credits' size="xl">
-      <div class="d-block">
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="https://www.flickr.com/photos/10185281@N05/1007499510" target="_blank">"....."</a>
-          <span> by <a href="https://www.flickr.com/photos/10185281@N05" target="_blank">friedwater</a></span>
-          is licensed under
-          <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY 2.0</a>
-        </p>
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="https://www.flickr.com/photos/66003893@N00/819233982" target="_blank">"Trevi Fountain"</a>
-          <span> by <a href="https://www.flickr.com/photos/66003893@N00" target="_blank">trozbo</a></span>
-          is licensed under
-          <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-NC-SA 2.0</a>
-        </p>
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="https://www.flickr.com/photos/33997420@N00/14879203024" target="_blank">"Hvar"</a>
-          <span> by <a href="https://www.flickr.com/photos/33997420@N00" target="_blank">alchen_x</a></span>
-          is licensed under
-          <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-SA 2.0</a>
-        </p>
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="https://www.flickr.com/photos/20777644@N05/3536595790" target="_blank">"DSC_0381"</a>
-          <span> by <a href="https://www.flickr.com/photos/20777644@N05" target="_blank">amslerPIX</a></span>
-          is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC 2.0</a>
-        </p>
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="https://www.flickr.com/photos/88827093@N00/32293308606" target="_blank">"Mask Temple"</a>
-          <span> by <a href="https://www.flickr.com/photos/88827093@N00" target="_blank">SdosRemedios</a></span>
-          is licensed under
-          <a href="https://creativecommons.org/licenses/by-nd/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-ND 2.0</a>
-        </p>
-
-        <p style="font-size: 0.9rem;font-style: italic;">
-          <a href="http://pngimg.com/download/4311" target="_blank">Clouds</a>
-          <span> by <a href="http://pngimg.com/imgs/nature/cloud/" target="_blank">cloud PNG image</a></span>
-          is licensed under
-          <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="margin-right: 5px;">Creative Commons 4.0 BY-NC</a>
-        </p>
-
-      </div>
-    </b-modal>
-  </footer>
-
-
 </div>
 </template>
 

@@ -13,7 +13,7 @@ import axios from 'axios'
 import {
 wapi
 } from '../store/apidefaults.js'
-
+//or could write validating function here
 export default {
   components: {
     chart
@@ -40,6 +40,7 @@ export default {
       response => {
         (this.countries = response.data);
         console.log('Weather API Data:', this.countries);
+        //check for meta and data key if fail use wapi (duplicate code)
       }
     )
     .catch(

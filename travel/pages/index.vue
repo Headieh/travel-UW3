@@ -73,8 +73,8 @@ export default {
   align-items: center;
   flex-direction: column;}
 .home{
-  position: absolute;
-  height: 100%;
+  position: relative;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   margin:0;
@@ -82,7 +82,6 @@ export default {
   z-index: -1;
   background-image: linear-gradient(to bottom right, grey, lightblue);
 }
-
 .scroll-container{
   position: absolute;
   z-index: 1;
@@ -102,7 +101,6 @@ export default {
     }
   }
 }
-
 .scroll-container2{
   position: absolute;
   z-index: 1;
@@ -122,7 +120,6 @@ export default {
     }
   }
 }
-
 .quote{
   font-size: x-large;
   font-weight: boldest;

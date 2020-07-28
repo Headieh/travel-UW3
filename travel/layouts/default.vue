@@ -1,26 +1,106 @@
 <template>
-  <div id="app">
-      <div id="nav">
-        <b-navbar toggleable="lg" type="light" variant="light">
-          <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-          <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav>
-              <nuxt-link class="nav-item" to="/">Intro</nuxt-link>
-              <nuxt-link class="nav-item" to="/trips">Trips</nuxt-link>
-              <!--<nuxt-link class="nav-item" to="/about">About Us</nuxt-link>-->
-              <!--<b-navbar-brand href="#">Travel with Nichole</b-navbar-brand>-->
-            </b-navbar-nav>
-          </b-collapse>
-        </b-navbar>
-      </div>
-      <div id="bod">
-        <nuxt />
-      </div>
+<div id="app">
+  <div id="nav">
+    <b-navbar toggleable="sm" type="light" variant="light">
+      <b-navbar-toggle target="head-collapse"></b-navbar-toggle>
+      <b-collapse id="head-collapse" is-nav>
+        <b-navbar-nav>
+          <!--<b-navbar-brand>Travel</b-navbar-brand>-->
+          <nuxt-link class="nav-item" to="/">Intro</nuxt-link>
+          <nuxt-link class="nav-item" to="/trips">Trips</nuxt-link>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
   </div>
+  <div id="bod">
+    <nuxt />
+  </div>
+  <!-- Footer -->
+  <footer>
+    <b-navbar toggleable="md" type="light" variant="light">
+      <b-navbar-toggle target="foot-collapse"></b-navbar-toggle>
+      <b-collapse id="foot-collapse" is-nav>
+        <b-navbar-nav class="mr-auto">
+          <ul>
+            <li class="list-unstyled">
+              Return to <a href="https://www.HNGodwin.com"> Portfolio </a></li>
+          </ul>
+
+          <ul>
+            <li class="list-unstyled">
+              <a href="#" ref="btnShow" @click="showModal('photocred')">Photo Credits</a></li>
+          </ul>
+        </b-navbar-nav>
+        <b-navbar-nav class="ml-auto">
+          <ul>
+            <li class="list-unstyled">
+              <div class="fb-share-button" data-href="https://nichole-travel.netlify.app" data-layout="button">
+              </div>
+
+            </li>
+<!-- https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/javascript-factory-function
+            <li class="list-unstyled">
+              <a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-size="large" data-show-count="false">Tweet</a>
+            </li>-->
+
+          </ul>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+  </footer>
+
+  <!-- Footer -->
+
+  <b-modal id="photocred" title='Photo Credits' size="xl">
+    <div class="d-block">
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="https://www.flickr.com/photos/10185281@N05/1007499510" target="_blank">"....."</a>
+        <span> by <a href="https://www.flickr.com/photos/10185281@N05" target="_blank">friedwater</a></span>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY 2.0</a>
+      </p>
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="https://www.flickr.com/photos/66003893@N00/819233982" target="_blank">"Trevi Fountain"</a>
+        <span> by <a href="https://www.flickr.com/photos/66003893@N00" target="_blank">trozbo</a></span>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-NC-SA 2.0</a>
+      </p>
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="https://www.flickr.com/photos/33997420@N00/14879203024" target="_blank">"Hvar"</a>
+        <span> by <a href="https://www.flickr.com/photos/33997420@N00" target="_blank">alchen_x</a></span>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-sa/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-SA 2.0</a>
+      </p>
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="https://www.flickr.com/photos/20777644@N05/3536595790" target="_blank">"DSC_0381"</a>
+        <span> by <a href="https://www.flickr.com/photos/20777644@N05" target="_blank">amslerPIX</a></span>
+        is licensed under <a target="_blank" href="https://creativecommons.org/licenses/by-nc/2.0/?ref=ccsearch&atype=html" style="margin-right: 5px;">CC BY-NC 2.0</a>
+      </p>
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="https://www.flickr.com/photos/88827093@N00/32293308606" target="_blank">"Mask Temple"</a>
+        <span> by <a href="https://www.flickr.com/photos/88827093@N00" target="_blank">SdosRemedios</a></span>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nd/2.0/?ref=ccsearch&atype=html" target="_blank" style="margin-right: 5px;">CC BY-ND 2.0</a>
+      </p>
+      <p style="font-size: 0.9rem;font-style: italic;">
+        <a href="http://pngimg.com/download/4311" target="_blank">Clouds</a>
+        <span> by <a href="http://pngimg.com/imgs/nature/cloud/" target="_blank">cloud PNG image</a></span>
+        is licensed under
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" style="margin-right: 5px;">Creative Commons 4.0 BY-NC</a>
+      </p>
+    </div>
+  </b-modal>
+
+</div>
 </template>
 
 <style lang='scss'>
 @import './main.scss';
+
+#nav {
+    //position: absolute;
+    width: 100%;
+}
 #nav a {
     color: $lighten-black;
     display: block;
@@ -65,5 +145,30 @@ li {
 }
 #bod {
     //padding: 1rem;
+    //position: absolute;
 }
 </style>
+
+<!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+</script>-->
+
+<script>
+export default {
+  methods: {
+    showModal(id) {
+      console.log('modal id', id)
+      this.$root.$emit('bv::show::modal', id, '#btnShow')
+    },
+    hideModal(id) {
+      this.$root.$emit('bv::hide::modal', id, '#btnShow')
+    },
+    toggleModal(id) {
+      this.$root.$emit('bv::toggle::modal', id, '#btnToggle')
+    }
+  },
+
+  data() {
+    return {}
+  }
+};
+</script>
