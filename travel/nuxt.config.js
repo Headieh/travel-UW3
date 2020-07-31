@@ -78,7 +78,8 @@ export default {
 
 
     ],
-    link: [{
+    link: [
+      {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
@@ -114,7 +115,10 @@ export default {
   plugins: [{
       src: '~plugins/fb-sdk.js',
       ssr: false
-    },
+    },{
+        src: '~plugins/tw-sdk.js',
+        ssr: false
+      },
     {
       src: '~plugins/vuelayers.js',
       ssr: false

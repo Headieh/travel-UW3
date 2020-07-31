@@ -4,25 +4,20 @@
     <div class='clouds'>
 <img class='cloud' src='@/assets/clouds.png'></div>
 </div>
-
 <div class='scroll-container2'>
   <div class='clouds2'>
 <img class='cloud2' src='@/assets/clouds.png'></div>
 </div>
-
-
   <!--<nuxt-link class="card-link" to="/trips">Enter Site</nuxt-link>-->
   <div class='quote-container'>
       <p v-if='this.quotes.q' class="quote">{{this.quotes.q.toLowerCase() | ALLCAPs }}</p>
       <p v-if='this.quotes.a' class='author'>{{this.quotes.a.toLowerCase() | PascalCase }}</p>
 </div></div>
 </template>
-
 <script>
 import {
   quotes
 } from '../store/util.js'
-
 export default {
   name: 'Home',
   methods: {
@@ -60,26 +55,32 @@ export default {
   },
 }
 </script>
-
 <style scoped lang='scss'>
 @import './main.scss';
 .quote-container{
-  display: flex;
+  //display: flex;
   position: relative;
   z-index: 2;
   font-family: 'Shadows Into Light', sans-serif;
-  justify-content: center;
-  margin: 18%;
-  align-items: center;
-  flex-direction: column;}
-.home{
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  margin:0;
-  padding:0;
-  z-index: -1;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: .5em;
+
+  //margin:auto;
+  //justify-content: center;
+  //margin: 18%;
+  //align-items: center;
+   //flex-direction: column;
+ }
+ .home{
+   position: relative;
+   height: 100vh;
+   min-height: 12rem;
+   width: 100%;
+   overflow: hidden;
+   margin:0;
+   padding:0;
+   z-index: -1;
   background-image: linear-gradient(to bottom right, grey, lightblue);
 }
 .scroll-container{
@@ -121,12 +122,12 @@ export default {
   }
 }
 .quote{
-  font-size: x-large;
+  font-size:6vw;
   font-weight: boldest;
   color: black;
 }
 .author{
-  font-size: large;
+  font-size: 3vh;
   color: black;
 }
 </style>

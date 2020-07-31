@@ -272,7 +272,7 @@ footer {
     text-align: left;
 }
 h2 {
-    padding: 0.5em;
+    padding-top: 1em;
     text-align: center;
 }
 </style>
