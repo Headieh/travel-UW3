@@ -16,7 +16,7 @@ export default {
         hid: 'description',
         name: 'description',
         content: "This site is Headieh Nichole Godwin's personal project demonstrating Vue.js skills"
-      }, //process.env.npm_package_description ||
+      },
       //https://developers.facebook.com/tools/debug
       {
         hid: 'fburl',
@@ -48,22 +48,12 @@ export default {
         property: 'og:image:alt',
         content: 'Costa Rica Beach - Manuel Antonio National Park'
       },
-
-
+      //https://cards-dev.twitter.com/validator
       {
         hid: 'tcard',
         property: 'twitter:card',
         content: "summary"
-      },
-
-
-      //<meta name="twitter:card" content="summary">
-      //<meta name="twitter:site" content="@publisher_handle">
-      //<meta name="twitter:title" content="Page Title">
-      //<meta name="twitter:description" content="Page description less than 200 characters">
-      //<meta name="twitter:creator" content="@author_handle">
-      //<meta name="twitter:image" content="http://www.example.com/image.jpg">
-
+      }
 
     ],
     link: [
@@ -120,7 +110,12 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+   buildModules: [
+    '@nuxtjs/google-analytics'
+  ],
+  googleAnalytics: {
+    id: 'UA-173087916-2'
+  },
   /*
    ** Nuxt.js modules
    */
@@ -128,7 +123,8 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'//,
+    //'@nuxtjs/google-analytics'
   ],
   /*
    ** Axios module configuration
@@ -144,4 +140,5 @@ export default {
      */
     extend(config, ctx) {}
   }
+
 }
