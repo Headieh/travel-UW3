@@ -219,7 +219,7 @@ export default {
     display: block;
     padding: 0.5rem;
     &__list {
-        text-align: left;
+        text-align: right;
     }
     &__list[data-title]::before {
         content: attr(data-title);
@@ -257,6 +257,10 @@ ul {
     padding-right: 2em;
     @include media-query($mq: 'md') {
         display: inline-block;
+    }
+    li{
+      text-align: right;
+      padding-right: .75em;
     }
 }
 
