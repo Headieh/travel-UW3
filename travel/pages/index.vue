@@ -88,7 +88,7 @@ export default {
     overflow: hidden;
     position: relative;
     transform:translateX(100%);
-    animation: clouds1 120s linear infinite;
+    animation: clouds 120s linear infinite;
     .cloud{
       width:100%;
     }
