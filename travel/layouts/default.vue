@@ -96,8 +96,6 @@
 </template>
 
 <style lang='scss'>
-@import './main.scss';
-
 ul {
     display: inline-block;
     list-style-type: none;
@@ -129,7 +127,6 @@ li {
         color: $black;
         font-weight: bold;
     }
-
 }
 
 #app {
@@ -140,13 +137,6 @@ li {
     color: #2c3e50;
 }
 </style>
-
-
-
-
-
-<!--<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-</script>-->
 
 <script>
 export default {
@@ -166,5 +156,4 @@ export default {
     return {}
   }
 };
-
 </script>

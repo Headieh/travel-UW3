@@ -12,38 +12,37 @@
 
 <script>
 export default {
-    name: 'Images',
-    data() {
-        return {
-            //bordered: false
-        }
-    },
-    filters: {
-        titleize(value) {
-            //first letter of each word capitalized
-            return value.replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
-            //all capitalized
-            //return value.replace(value, x => x.toUpperCase());
-        }
-    },
-    props: {
-        card: {
-            type: Object,
-            required: true
-        }
-    },
-    methods: {
-        getImgUrl: function (pic) {
-            return require('@/assets/' + pic)
-        },
-
-
+  name: 'Images',
+  data() {
+    return {
+      //bordered: false
     }
+  },
+  filters: {
+    titleize(value) {
+      //first letter of each word capitalized
+      return value.replace(/(?:^|\s|-)\S/g, x => x.toUpperCase());
+      //all capitalized
+      //return value.replace(value, x => x.toUpperCase());
+    }
+  },
+  props: {
+    card: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    getImgUrl: function(pic) {
+      return require('@/assets/' + pic)
+    },
+
+
+  }
 };
 </script>
 
 <style scoped lang='scss'>
-@import './main.scss';
 .wrapper {
     width: auto;
     height: 100%;
@@ -57,7 +56,7 @@ export default {
     overflow: hidden;
 }
 .image-card {
-  margin: -9rem 0 -4rem 0;
+    margin: -9rem 0 -4rem;
 }
 .image-card img {
     transition: 3s ease;

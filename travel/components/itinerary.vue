@@ -23,25 +23,22 @@
       </vl-map>
     </b-col>
     <b-col lg='6' sm="12">
-<div v-for="feature in selectedFeatures" :key="feature.id">
-<h1>{{ feature.id}}</h1>
-<p>Recommendations:</p>
-      <ul>
-           <li v-for="ideas in feature.properties.ideas">
-
+      <div v-for="feature in selectedFeatures" :key="feature.id">
+        <h1>{{feature.id}}</h1>
+        <p>Recommendations:</p>
+        <ul>
+          <li v-for="ideas in feature.properties.ideas">
             <component :is="ideas.b?'a':'span'" :href="ideas.b || ''" target="_blank">{{ideas.a}}
             </component>
-
-           </li>
-         </ul>
-       </div>
+          </li>
+        </ul>
+      </div>
     </b-col>
   </b-row>
 </div>
 </template>
 
 <script>
-
 const filterObject = (obj, filter, filterValue) =>
   Object.keys(obj).reduce((acc, val) =>
     (obj[val][filter] === filterValue ? {
@@ -67,16 +64,15 @@ export default {
       selectedFeatures: []
     }
   }
-  };
+};
 </script>
 
 <style scoped lang='scss'>
-@import './main.scss';
 .mapimg {
     width: 100%;
     height: 25rem;
 }
-li{
-  list-style-type: circle;
+li {
+    list-style-type: circle;
 }
 </style>

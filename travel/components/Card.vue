@@ -1,5 +1,4 @@
 <template>
-<!--https://codepen.io/RuudBurger/pen/bwjry-->
 <div class='card-single'>
   <app-favs></app-favs>
   <div class="flipper" @click="flip()">
@@ -11,10 +10,8 @@
         <cimg :card='card'></cimg>
       </div>
       <div class="card__face--back">
-
         <div class="card">
           <div class="card-block">
-
             <a href="#" ref="btnShow" @click="showModal(card.id+'weather')" class="card-link">Weather</a>
             <b-modal :id="card.id+'weather'" class="weather" title='Weather' size="xl">
               <div class="d-block">
@@ -26,7 +23,6 @@
                 <weather :card='card'></weather>
               </div>
             </b-modal>
-
             <a href="#" ref="btnShow" @click="showModal(card.id+'itinerary')" class="card-link">Itenerary Ideas</a>
             <b-modal :id="card.id+'itinerary'" class="itnry" title='Itinerary' size="xl">
               <div class="d-block">
@@ -39,17 +35,12 @@
                 <itnry :card='card'></itnry>
               </div>
             </b-modal>
-
-
             <currency :card='card' :money='money' v-if="card.cur != 'USD'"></currency>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 </div>
 </template>
 
@@ -80,7 +71,7 @@ export default {
     'app-favs': Favorite,
     'weather': weather,
     'itnry': itinerary,
-    'cimg' : cardimage,
+    'cimg': cardimage,
     'currency': currency,
   },
   data() {
@@ -114,16 +105,12 @@ export default {
 };
 </script>
 
-
 <style scoped lang='scss'>
-@import './main.scss';
 .modal-title {
     text-align: center;
     padding-bottom: 1em;
     margin: auto;
 }
-
-
 .card-flip {
     perspective: 1000px;
 }

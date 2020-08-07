@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
 
   <div class="form-filter">
     <button @click='changeUnit(false)'> Metric (°C | mm) </button>
@@ -7,8 +7,8 @@
   </div>
 
   <article class="chart">
-  <highcharts :options="chartOptions" :highcharts="hcInstance"></highcharts>
-</article>
+    <highcharts :options="chartOptions" :highcharts="hcInstance"></highcharts>
+  </article>
 </div>
 </template>
 
@@ -110,42 +110,42 @@ export default {
           text: ''
         },
         chart: {
-        zoomType: 'x'
-    },
+          zoomType: 'x'
+        },
         yAxis: [{
-     title: {
-       text: 'Percipitation (mm)'
-     },
-     opposite: true,
-     lineWidth: 2
-   }, {
-     title: {
-       text: 'Temperature (°C)'
-     },
-     opposite: false,
-     lineWidth: 2
-   }],
+          title: {
+            text: 'Percipitation (mm)'
+          },
+          opposite: true,
+          lineWidth: 2
+        }, {
+          title: {
+            text: 'Temperature (°C)'
+          },
+          opposite: false,
+          lineWidth: 2
+        }],
 
         series: [{
           type: 'column',
           name: 'Avg Percipitation',
           data: prcpList,
-           yAxis: 0
+          yAxis: 0
         }, {
           type: 'spline',
           name: 'Avg Temperature',
           data: tavgList,
-           yAxis: 1
+          yAxis: 1
         }, {
           type: 'spline',
           name: 'Max Temperature',
           data: tmaxList,
-           yAxis: 1
+          yAxis: 1
         }, {
           type: 'spline',
           name: 'Min Temperature',
           data: tminList,
-           yAxis: 1
+          yAxis: 1
         }],
         xAxis: {
           categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -161,13 +161,12 @@ export default {
 .form-filter {
     display: block;
     bottom: 0;
-    margin:.5em;
+    margin: 0.5em;
 }
-
 
 .chart {
     border: none;
-    padding: .5rem;
+    padding: 0.5rem;
     width: 100%;
 
     &__title {

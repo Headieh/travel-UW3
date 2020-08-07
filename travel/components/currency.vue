@@ -17,9 +17,10 @@ export default {
     mconv
   },
   props: {
-      money: {Object,
-        required: true
-      },
+    money: {
+      Object,
+      required: true
+    },
     card: {
       type: Object,
       required: true
@@ -29,10 +30,5 @@ export default {
     return {}
   }
 
-  };
-
+};
 </script>
-
-<style scoped lang='scss'>
-@import './main.scss';
-</style>

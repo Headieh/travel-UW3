@@ -1,8 +1,6 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
+  // Headers of the page
   head: {
     title: 'Travel',
     meta: [{
@@ -56,8 +54,7 @@ export default {
       }
 
     ],
-    link: [
-      {
+    link: [{
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
@@ -68,35 +65,23 @@ export default {
       }
     ]
   },
-  /*
-   ** Customize the progress-bar color
-   */
+  // Customize the progress-bar color
   loading: {
     color: '#fff'
   },
-  /*
-   ** Global CSS
-   */
+  //Global CSS
   css: [
-
+    'node_modules/bootstrap-vue/src/index.scss'
   ],
-
-  //css: [
-  //  '@/assets/scss/main.scss'
-  //]
-
-  /*
-   ** Plugins to load before mounting the App
-   */
-
-
+  //Plugins to load before mounting the App
   plugins: [{
       src: '~plugins/fb-sdk.js',
       ssr: false
-    },{
-        src: '~plugins/tw-sdk.js',
-        ssr: false
-      },
+    },
+    {
+      src: '~plugins/tw-sdk.js',
+      ssr: false
+    },
     {
       src: '~plugins/vuelayers.js',
       ssr: false
@@ -106,38 +91,37 @@ export default {
       ssr: false
     }
   ],
-
-  /*
-   ** Nuxt.js dev-modules
-   */
-   buildModules: [
-    '@nuxtjs/google-analytics'
+  //Nuxt.js dev-modules
+  buildModules: [
+    '@nuxtjs/style-resources',
+    //'@nuxtjs/google-analytics'
   ],
+  styleResources: {
+    // your settings here
+    sass: [],
+    scss: ['./main.scss'],
+    less: [],
+    stylus: []
+  },
   googleAnalytics: {
     id: 'UA-173087916-2'
   },
-  /*
-   ** Nuxt.js modules
-   */
+  //Nuxt.js modules
   modules: [
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/google-analytics',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'//,
+    '@nuxtjs/axios' //,
     //'@nuxtjs/google-analytics'
   ],
-  /*
-   ** Axios module configuration
-   ** See https://axios.nuxtjs.org/options
-   */
+  /*Axios module configuration
+   See https://axios.nuxtjs.org/options
+  */
   axios: {},
-  /*
-   ** Build configuration
-   */
+  //Build configuration
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    //You can extend webpack config here
     extend(config, ctx) {}
   }
 

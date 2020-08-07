@@ -19,6 +19,10 @@ This project demonstrates:
 - [Climate Data](https://dev.meteostat.net/api/point/climate)
 - [Station List](https://open.meteostat.net/stations.csv)
 
+### Helpful Code:
+- [Flip](https://codepen.io/RuudBurger/pen/bwjry)
+- [Search](https://codepen.io/AndrewThian/pen/QdeOVa)
+
 ### To Migrate Code:
 -   Verify `node` is installed by running `node -v` in your terminal to see if a version comes back
 -   If `node` is not already installed: [install node](https://nodejs.org/en/)
