@@ -124,7 +124,7 @@ li {
         }
     }
     a.router-link-exact-active {
-        color: $black;
+        color: black;
         font-weight: bold;
     }
 }

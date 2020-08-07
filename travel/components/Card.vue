@@ -65,6 +65,10 @@ export default {
     card: {
       type: Object,
       required: true
+    },
+    flipped: {
+      type: Boolean,
+      required: true
     }
   },
   components: {
@@ -76,7 +80,7 @@ export default {
   },
   data() {
     return {
-      flipped: false,
+      flipped: this.flipped,
       decks: decks.filter(function(litem) {
         return litem.area != null;
       })

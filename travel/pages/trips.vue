@@ -58,7 +58,7 @@
       <div class='card-multiple'>
         <b-row>
           <b-col md='6' lg='4' sm="12" v-for="(card, idx) in flist" :key="idx" :id="card.id">
-            <card-single :card='card' :money="money"> </card-single>
+            <card-single :card='card' :money="money" :flipped=false> </card-single>
           </b-col>
         </b-row>
       </div>
@@ -209,7 +209,6 @@ export default {
 
 
 <style scoped lang='scss'>
-@import './main.scss';
 .Trips {
     padding: 1rem;
 }

@@ -56,21 +56,13 @@ export default {
 }
 </script>
 <style scoped lang='scss'>
-@import './main.scss';
 .quote-container{
-  //display: flex;
   position: relative;
   z-index: 2;
   font-family: 'Shadows Into Light', sans-serif;
   margin-left: auto;
   margin-right: auto;
   padding-top: .5em;
-
-  //margin:auto;
-  //justify-content: center;
-  //margin: 18%;
-  //align-items: center;
-   //flex-direction: column;
  }
  .home{
    position: relative;
@@ -115,7 +107,7 @@ export default {
     overflow: hidden;
     position: relative;
     transform:translateX(100%);
-    animation: clouds1 120s linear 60s infinite;
+    animation: clouds 120s linear 60s infinite;
     .cloud2{
       width:100%;
     }

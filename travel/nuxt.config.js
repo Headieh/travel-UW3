@@ -112,8 +112,7 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/google-analytics',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios' //,
-    //'@nuxtjs/google-analytics'
+    '@nuxtjs/axios' //
   ],
   /*Axios module configuration
    See https://axios.nuxtjs.org/options

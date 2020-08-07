@@ -27,7 +27,7 @@ export default {
 
 <style scoped lang='scss'>
 .notfav {
-    color: $red;
+    color: $c-heart;
     animation: $a-heart;
     display: inline;
     &:hover {
@@ -38,10 +38,9 @@ export default {
     }
 }
 .fav {
-    color: $red;
+    color: $c-heart;
     transform: scale(1.7);
     animation: NULL;
-    color: $red;
     cursor: pointer;
     opacity: 1;
     display: inline;
