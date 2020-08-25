@@ -105,7 +105,6 @@ export default {
   mounted() {
     axios
       .get(`${this.url_base}${this.api_key}${this.query}${this.allcur},${this.us},${this.eu}`)
-      //.then(response => (this.money = response.data))
       .then(
         response => {
           (this.money = response.data);
@@ -116,12 +115,10 @@ export default {
         response => {
           console.log(
             'Currency API has errored - Either max queries have been reached or trying to access on netlify. Netlify only processes data with SSL Encryption, did not pay for that version of the api therefore uses defined values for default');
-          //console.log(response);
           (this.money = capi);
         },
         error => {
           console.log('ERROR');
-          //console.log(error);
           this.errored = true;
         })
 
@@ -209,11 +206,12 @@ export default {
 
 
 <style scoped lang='scss'>
+
 .Trips {
     padding: 1rem;
 }
 .side {
-    margin-top: 1em;
+    margin-top: 1rem;
     text-align: left;
     display: block;
     padding: 0.5rem;
@@ -228,10 +226,10 @@ export default {
 .search {
     display: block;
     width: 95%;
-    padding: 1em;
+    padding: 1rem;
 
     color: rgb(49, 49, 49);
-    font-size: 1em;
+    font-size: 1rem;
 
     appearance: none;
     border: none;
@@ -253,7 +251,7 @@ export default {
 ul {
     display: block;
     padding-left: 0;
-    padding-right: 2em;
+    padding-right: 2rem;
     @include media-query($mq: 'md') {
         display: inline-block;
     }
@@ -268,14 +266,15 @@ ul[data-title]::before {
     text-decoration: underline;
     font-weight: bold;
     //padding-right: .5em;
-    margin-top: 1em;
+    margin-top: 1rem;
 
 }
 footer {
     text-align: left;
 }
 h2 {
-    padding-top: 1em;
+    padding-top: 1rem;
     text-align: center;
 }
+
 </style>

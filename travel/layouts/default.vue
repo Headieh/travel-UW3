@@ -7,7 +7,9 @@
         <b-navbar-nav class="mr-auto">
           <ul>
             <li class="list-unstyled">
+            <div id='fb-root'>
               <div class="fb-share-button" data-href="https://nichole-travel.netlify.app" data-layout="button"></div>
+</div>
             </li>
             <li class="list-unstyled">
               <a class="twitter-share-button" href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false">Tweet</a>

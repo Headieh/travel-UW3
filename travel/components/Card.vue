@@ -15,8 +15,8 @@
             <a href="#" ref="btnShow" @click="showModal(card.id+'weather')" class="card-link">Weather</a>
             <b-modal :id="card.id+'weather'" class="weather" title='Weather' size="xl">
               <div class="d-block">
-                <b-dropdown id="searchW" :text='card.location' class="modal-title" v-on:change="">
-                  <b-dropdown-item v-for="d in decks" :key="d.id" :value="d.id" @click="d.id==card.id ? NULL :  hideModal(card.id+'weather'); showModal(d.id+'weather');">
+                <b-dropdown class='ddm' id="searchW" :text='card.location' v-on:change="">
+                  <b-dropdown-item class='ddi' v-for="d in decks" :key="d.id" :value="d.id" @click="d.id==card.id ? NULL :  hideModal(card.id+'weather'); showModal(d.id+'weather');">
                     {{d.location}}
                   </b-dropdown-item>
                 </b-dropdown>
@@ -27,7 +27,7 @@
             <b-modal :id="card.id+'itinerary'" class="itnry" title='Itinerary' size="xl">
               <div class="d-block">
                 <b-dropdown id="searchI" :text='card.location' class="modal-title" v-on:change="">
-                  <b-dropdown-item v-for="d in decks" :key="d.id" :value="d.id" @click="d.id==card.id ? NULL :  hideModal(card.id+'itinerary'); showModal(d.id+'itinerary');">
+                  <b-dropdown-item class='ddi' v-for="d in decks" :key="d.id" :value="d.id" @click="d.id==card.id ? NULL :  hideModal(card.id+'itinerary'); showModal(d.id+'itinerary');">
                     {{d.location}}
                   </b-dropdown-item>
                 </b-dropdown>
@@ -106,6 +106,20 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+
+
+.ddi, .ddi:hover{
+margin-right:.5rem;
+text-align: left;
+padding-right:.5rem;
+background-color:white;
+}
+
+.ddm{
+  margin:.25rem;
+  padding:0rem;
+}
+
 .modal-title {
     text-align: center;
     padding-bottom: 1em;
@@ -142,14 +156,15 @@ export default {
     z-index: 2;
     transform: rotateY(0deg);
 }
-a,
-p {
+
+p,a {
     display: block;
-    padding: 2%;
+    padding: .25rem;
     &:hover {
         font-weight: bold;
     }
 }
+
 .favs {
     margin-top: 2em;
     display: inline-block;
@@ -197,4 +212,5 @@ p {
         }
     }
 }
+
 </style>
