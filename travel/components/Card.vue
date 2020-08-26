@@ -77,15 +77,16 @@ export default {
   data() {
     return {
       flipped: false,
+
       decks: decks.filter(function(litem) {
         return litem.area != null;
       })
+
     }
   },
   methods: {
     flip: function() {
       this.flipped = !this.flipped;
-      //console.log('flipped', this.flipped)
     },
     getImgUrl: function(pic) {
       return require('@/assets/' + pic)

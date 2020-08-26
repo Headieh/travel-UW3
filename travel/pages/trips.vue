@@ -57,9 +57,13 @@
     <b-col lg='10' sm="12">
       <div class='card-multiple'>
         <b-row>
-           <b-col md='6' lg='4' sm="12" v-for="(card, idx) in flist" :key="idx" :id="card.id">
-           <card-single :card='card' :money="money"> </card-single>
+
+           <b-col md='6' lg='4' sm="12" v-for="(card, idx) in flist"  v-bind:key="idx" :id="card.id">
+
+           <card-single :card='card' :money="money" v-bind:key='card.id'> </card-single>
+
           </b-col>
+
         </b-row>
       </div>
     </b-col>
@@ -100,7 +104,9 @@ export default {
         }
         return true
       }, this)
+
     }
+
   },
   mounted() {
     axios
