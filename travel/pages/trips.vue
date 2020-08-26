@@ -57,8 +57,8 @@
     <b-col lg='10' sm="12">
       <div class='card-multiple'>
         <b-row>
-          <b-col md='6' lg='4' sm="12" v-for="(card, idx) in flist" :key="idx" :id="card.id">
-            <card-single :card='card' :money="money"> </card-single>
+           <b-col md='6' lg='4' sm="12" v-for="(card, idx) in flist" :key="idx" :id="card.id">
+           <card-single :card='card' :money="money"> </card-single>
           </b-col>
         </b-row>
       </div>
