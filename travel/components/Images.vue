@@ -3,7 +3,7 @@
   <div class="wrapper">
     <div class="zoom-effect-container">
       <div class="image-card">
-        <b-img v-b-tooltip.hover title="Click name above to see more!" fluid :src="getImgUrl(card.images)" :alt="card.text | titleize "></b-img>
+        <b-img title="Click name above to see more!" fluid :src="getImgUrl(card.images)" :alt="card.text | titleize "></b-img>
       </div>
     </div>
   </div>
